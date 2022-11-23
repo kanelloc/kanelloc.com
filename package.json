@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ."
   },
   "eslintConfig": {
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
     "extends": [
       "react-app",
       "react-app/jest",

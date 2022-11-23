@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRoutes } from 'react-router-dom';
 import NotFound from '../pages/404';
 import Home from '../pages/Home';
