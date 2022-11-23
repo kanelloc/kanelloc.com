@@ -5,7 +5,7 @@ const Home = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box transitionDuration="100ms">
-      <Heading>Home</Heading>
+      <Heading>Home 1 </Heading>
       <Button onClick={toggleColorMode}>Toggle {colorMode === 'light' ? 'Dark' : 'Light'}</Button>
     </Box>
   );
