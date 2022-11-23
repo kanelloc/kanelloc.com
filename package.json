@@ -24,7 +24,7 @@
   "dependencies": {
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.6.2",
+    "prettier": "^2.8.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@chakra-ui/react": "^2.4.1",
