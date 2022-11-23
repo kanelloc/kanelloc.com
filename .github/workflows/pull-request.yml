@@ -10,5 +10,6 @@ jobs:
         with:
           node-version: 14.19.3
           cache: 'npm'
+      - run: npm run install
       - run: npm run lint
       - run: npm run build
