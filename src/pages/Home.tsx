@@ -1,11 +1,11 @@
 import React from 'react';
-import { Flex, Heading } from '@chakra-ui/react';
+import { Container, Heading } from '@chakra-ui/react';
 
 const Home = () => {
   return (
-    <Flex alignItems="center" justifyContent="center">
-      <Heading>Home</Heading>
-    </Flex>
+    <Container maxWidth="1024px">
+      <Heading>Hi ! 👋</Heading>
+    </Container>
   );
 };
 
