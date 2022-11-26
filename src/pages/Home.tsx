@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Container, Flex, Heading, Link } from '@chakra-ui/react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/all';
-import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   const onPress = () => {
@@ -10,10 +9,6 @@ const Home = () => {
 
   return (
     <Container maxWidth="1024px">
-      <Helmet>
-        <title>Babis Kanellopoulos - Software Engineer</title>
-        <meta name="description" content="Just a simple personal page" />
-      </Helmet>
       <Flex alignItems="flex-start" justifyContent="center" flexDirection="column">
         <Heading>Hi ! 👋</Heading>
         <Flex flexDirection="row" alignItems="center">
