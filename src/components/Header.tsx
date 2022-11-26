@@ -1,7 +1,6 @@
 import React from 'react';
 import { Flex, Heading, IconButton, useColorMode } from '@chakra-ui/react';
-import { SettingsIcon } from '@chakra-ui/icons';
-import { AiOutlineCode } from 'react-icons/all';
+import { AiOutlineCode, ImContrast } from 'react-icons/all';
 
 const Header = () => {
   const { toggleColorMode } = useColorMode();
@@ -14,7 +13,7 @@ const Header = () => {
           kanelloc
         </Heading>
       </Flex>
-      <IconButton aria-label="Search database" icon={<SettingsIcon />} onClick={toggleColorMode} />
+      <IconButton aria-label="Search database" icon={<ImContrast />} onClick={toggleColorMode} />
     </Flex>
   );
 };
