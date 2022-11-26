@@ -3,7 +3,7 @@ import { Button, Container, Flex, Heading, Link } from '@chakra-ui/react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/all';
 
 const Home = () => {
-  const onPress = (): void => {
+  const onSayHello = (): void => {
     window.location.href = 'mailto:babis.kane@gmail.com';
   };
 
@@ -12,7 +12,7 @@ const Home = () => {
       <Flex alignItems="flex-start" justifyContent="center" flexDirection="column">
         <Heading>Hi ! 👋</Heading>
         <Flex flexDirection="row" alignItems="center">
-          <Button marginY="24px" colorScheme="teal" onClick={onPress}>
+          <Button marginY="24px" colorScheme="teal" onClick={onSayHello}>
             Say hello!
           </Button>
           <Link href="https://github.com/kanelloc" isExternal marginX="16px">

@@ -8,18 +8,16 @@ type LayoutProps = {
   children: ReactNode;
 };
 
-const Layout = ({ children }: LayoutProps) => {
-  return (
-    <Box>
-      <Box padding="1rem">
-        <Header />
-        <Box width="full" as="main" marginY="60px">
-          {children}
-        </Box>
+const Layout = ({ children }: LayoutProps) => (
+  <Box>
+    <Box padding="1rem">
+      <Header />
+      <Box width="full" as="main" marginY="60px">
+        {children}
       </Box>
-      <Footer />
     </Box>
-  );
-};
+    <Footer />
+  </Box>
+);
 
 export default Layout;
