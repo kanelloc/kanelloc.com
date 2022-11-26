@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router } from 'react-router-dom';

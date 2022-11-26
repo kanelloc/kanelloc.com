@@ -5,6 +5,7 @@ import { AiOutlineCode } from 'react-icons/all';
 
 const Header = () => {
   const { toggleColorMode } = useColorMode();
+
   return (
     <Flex alignItems="center" justifyContent="space-between">
       <Flex alignItems="center" justifyContent="space-between">

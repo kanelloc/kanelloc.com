@@ -3,7 +3,7 @@ import { Button, Container, Flex, Heading, Link } from '@chakra-ui/react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/all';
 
 const Home = () => {
-  const onPress = () => {
+  const onPress = (): void => {
     window.location.href = 'mailto:babis.kane@gmail.com';
   };
 

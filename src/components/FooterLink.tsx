@@ -5,6 +5,7 @@ type Props = {
   label: string;
   href: string;
 };
+
 const FooterLink = ({ href, label }: Props) => (
   <Link color="teal" href={href} isExternal>
     {label}
