@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/all';
 
 const Home = () => {
   const onPress = () => {
-    window.open('mailto:babis.kane@gmail.com');
+    window.location.href = 'mailto:babis.kane@gmail.com';
   };
 
   return (
