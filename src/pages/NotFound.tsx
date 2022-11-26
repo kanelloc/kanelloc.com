@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Box, Button, Heading, Text } from '@chakra-ui/react';
 
 const NotFound = () => {
+  const navigate = useNavigate();
+
+  const goToHome = (): void => {
+    navigate('/');
+  };
+
   return (
     <Box textAlign="center" py={10} px={6}>
       <Heading
@@ -19,7 +26,9 @@ const NotFound = () => {
         The page you&apos;re looking for does not seem to exist
       </Text>
 
-      <Button colorScheme="teal">Go to Home</Button>
+      <Button colorScheme="teal" onClick={goToHome}>
+        Go to Home
+      </Button>
     </Box>
   );
 };

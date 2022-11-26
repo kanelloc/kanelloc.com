@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRoutes } from 'react-router-dom';
-import NotFound from '../pages/404';
+import NotFound from '../pages/NotFound';
 import Home from '../pages/Home';
 
 const Routing = () => {
