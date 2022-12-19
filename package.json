@@ -22,13 +22,13 @@
     ]
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.14",
-    "@chakra-ui/react": "^2.4.1",
+    "@chakra-ui/icons": "^2.0.12",
+    "@chakra-ui/react": "^2.4.4",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "framer-motion": "^7.6.9",
+    "framer-motion": "^7.10.2",
     "prettier": "^2.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
