@@ -5,7 +5,7 @@ import Routing from './lib/Routing';
 import theme from './styles/Theme';
 import Layout from './components/Layout';
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
     <ChakraProvider theme={theme}>
       <Router>
