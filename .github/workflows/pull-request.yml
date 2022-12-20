@@ -1,15 +1,22 @@
 name: Pull request pipeline
 'on': pull_request
 jobs:
-  build_and_preview:
+  lint:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 14.19.3
-          cache: 'npm'
-      - run: npm install
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup
+        uses: ./.github/actions/setup
       - run: npm run lint
+#      - run: npm run build
+  build:
+    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup
+        uses: ./.github/actions/setup
       - run: npm run build
