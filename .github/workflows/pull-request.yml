@@ -1,5 +1,8 @@
 name: Pull request pipeline
 'on': pull_request
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build_and_preview:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
@@ -8,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: 14.19.3
+          node-version-file: .nvmrc
           cache: 'npm'
       - run: npm install
       - run: npm run lint
